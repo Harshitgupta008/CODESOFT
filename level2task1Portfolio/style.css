@@ -6,6 +6,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    transition: 2s all ease-in-out;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -138,12 +140,13 @@ header {
     background-color: rgb(161, 248, 39);
     font-family: "Poppins";
 }
-button a{
+
+button a {
     text-align: center;
     cursor: pointer;
     font-size: 12px;
     font-family: "Poppins";
-    
+
 }
 
 
@@ -195,6 +198,7 @@ button a{
         border: 2px solid hsla(0, 4%, 86%, 0.397);
     }
 }
+
 /* skill are start here */
 .skillcard {
     width: 100%;
@@ -258,13 +262,15 @@ button a{
     padding: 20px;
     background-color: #f9f9f9;
 }
-.projectcard{
+
+.projectcard {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -293,3 +299,86 @@ button a{
     font-size: 1em;
     margin: 0 16px 16px;
 }
+
+/* contact form start here  */
+.wholecontainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 15px;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.fixbutt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer are start here */
+footer {
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:320px) {
+    footer{
+        font-size: 12px;
+    }
+}
+
