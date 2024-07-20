@@ -16,13 +16,21 @@ a {
     text-transform: uppercase;
 }
 
+header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+}
 
 .nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
     transition: 2s all ease-in;
+
 }
 
 .logo {
@@ -53,7 +61,7 @@ a {
     width: 94%;
     top: 5rem;
     left: 18px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(63, 61, 61);
     transition: 2s all ease-in;
     border-radius: 15px;
 }
@@ -61,7 +69,7 @@ a {
 .nav__link a {
     display: block;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     color: white;
 }
 
@@ -75,7 +83,7 @@ a {
     display: none;
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 670px) {
     .nav__link {
         display: block;
         position: static;
@@ -88,10 +96,200 @@ a {
     .nav__link a {
         display: inline-block;
         padding: 10px;
-        color:black;
+        color: black;
     }
 
     .hamburger {
         display: none;
     }
+}
+
+/* banner start here */
+
+.hero-image {
+    margin-top: 90px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/banner-harshit.jpg");
+    height: 85vh;
+    z-index: -12;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-image button {
+    border: none;
+    outline: 0;
+    padding: 10px 25px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(161, 248, 39);
+    font-family: "Poppins";
+}
+button a{
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Poppins";
+    
+}
+
+
+/* about page here  */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    font-size: medium;
+}
+
+.skils-about {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-persent {
+    height: 80px;
+    width: 80px;
+    transition: all 0.2s ease-in;
+}
+
+.card-persent:hover {
+    transform: scale(1.2);
+}
+
+.card-persent img {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 10%;
+    border: 2px solid hsla(0, 4%, 86%, 0.397);
+}
+
+@media (width<480px) {
+    .card-persent {
+        height: 50px;
+        width: 50px;
+        transition: all 0.2s ease-in;
+    }
+
+    .card-persent img {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 10%;
+        border: 2px solid hsla(0, 4%, 86%, 0.397);
+    }
+}
+/* skill are start here */
+.skillcard {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-skill {
+    width: 80%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 60px;
+}
+
+.skills {
+    height: 30px;
+    border-radius: 60px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    padding-right: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.html {
+    width: 90%;
+    background-color: rgb(63, 39, 248);
+}
+
+.css {
+    width: 80%;
+    background-color: rgb(63, 39, 248);
+}
+
+.js {
+    width: 75%;
+    background-color: rgb(63, 39, 248);
+}
+
+.reactjs {
+    width: 85%;
+    background-color: rgb(63, 39, 248);
+}
+
+/* project page  start */
+.project-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.projectcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    height: 50%;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin: 16px;
+}
+
+.card-description {
+    font-size: 1em;
+    margin: 0 16px 16px;
 }

@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>responsive navbar</title>
+    <title>Harshit-gupta</title>
 </head>
 
 <body>
@@ -26,15 +26,109 @@
             </div>
 
             <div class="nav__link hide">
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">skils</a>
-                <a href="#">contact</a>
+                <a href="#Homesection">Home</a>
+                <a href="#Aboutsection">About</a>
+                <a href="#Skillsection">Skils</a>
+                <a href="#projectsection">Project</a>
+                <a href="#">Contact</a>
             </div>
         </nav>
     </header>
-</body>
+    <div class="hero-image" id="Homesection">
+        <div class="hero-text">
+            <h1 style="font-size:40px">I'm</h1>
+            <h1 style="font-size:50px">Harshit Gupta</h1>
+            <h3 class="typewriter">A <span class="auto-type"></span></h3>
+            <button><a href="#projectsection">Contact me</a></button>
+        </div>
+    </div>
 
-<script src="./script.js"></script>
+    <div class="about-section" id="Aboutsection">
+        <h1>About Us </h1>
+        <p>I am a highly motivated student pursuing a
+            B.Tech in Computer Science and Engineering from Galgotias University,
+            I am proficient in Data Structures and Algorithms
+            using Java and passionate about web development with expertise in the
+            MERN Developer</p>
+    </div>
+    <div class="skils-about">
+        <div class="card-persent">
+            <img src='./img/html-5.png' alt="">
+        </div>
+        <div class="card-persent">
+            <img src='./img/css-3.png' alt="">
+        </div>
+        <div class="card-persent">
+            <img src='./img/tailwind-css.jpg' alt="">
+        </div>
+        <div class="card-persent">
+            <img src='./img/js.png' alt="">
+        </div>
+        <div class="card-persent">
+            <img src='./img/Reactjs.png' alt="">
+        </div>
+    </div>
+    <!-- skill are start here -->
+    <div class="skillcard" id="Skillsection">
+        <h1>My Skills</h1>
+
+        <p>HTML</p>
+        <div class="container-skill">
+            <div class="skills html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container-skill">
+            <div class="skills css">80%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container-skill">
+            <div class="skills js">75%</div>
+        </div>
+
+        <p>React js</p>
+        <div class="container-skill">
+            <div class="skills reactjs">85%</div>
+        </div>
+    </div>
+    <!-- project page start here -->
+    <div class="project-container" id="projectsection">
+        <h1>My All Project</h1>
+        <div class="projectcard">
+            <div class="card">
+                <img src="img/calculator.jpg" alt="Image 1">
+                <h3 class="card-title">Calculator</h3>
+                <p class="card-description">Using html, css, javascript.</p>
+            </div>
+            <div class="card">
+                <img src="img/quiz.png" alt="Image 2">
+                <h3 class="card-title">Quiz</h3>
+                <p class="card-description">Using html, css, json, javascript..</p>
+            </div>
+            <div class="card">
+                <img src="img/ticjpeg.jpeg" alt="Image 3">
+                <h3 class="card-title">Tic tac teo</h3>
+                <p class="card-description">Using html css javascript..</p>
+            </div>
+            <div class="card">
+                <img src="img/passwordgen.png" alt="Image 5">
+                <h3 class="card-title">Password generator</h3>
+                <p class="card-description">Using html css javascript.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed(".auto-type", {
+            strings: ["Fullstack Developer", "MERN Developer"],
+            typeSpeed: 120,
+            backSpeed: 120,
+            loop: true
+
+        })
+    </script>
+    <script src="./script.js"></script>
+</body>
 
 </html>
